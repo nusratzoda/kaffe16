@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{background:#ECEAE5;color:#2E2A26}
+:focus-visible{outline:2px solid #6B8A5A;outline-offset:3px}
+@keyframes drift{from{transform:translateX(-6%)}to{transform:translateX(6%)}}
+.light-shaft{animation:drift 14s ease-in-out infinite alternate}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.light-shaft{animation:none}}
